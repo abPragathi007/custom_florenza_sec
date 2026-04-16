@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "2ank4z9SZwUyWuTtPZn5w"
+uri = "file://artifacts/custom-florenza/src/assets/tshirt.png"
+type = "image"
+title = "Pastel custom t-shirt mockup"
+
+[[generated]]
+id = "1khsGibSqaNU9TI0f1vVF"
+uri = "file://artifacts/custom-florenza/src/assets/hoodie.png"
+type = "image"
+title = "Pastel custom hoodie mockup"
+
+[[generated]]
+id = "PdViNJWfbXeeWM_KF2IvX"
+uri = "file://artifacts/custom-florenza/src/assets/shirt.png"
+type = "image"
+title = "Pastel custom shirt mockup"
+
+[[generated]]
+id = "89GV1VXpQR4S-OSWL9fLm"
+uri = "file://artifacts/custom-florenza/src/assets/lifestyle1.png"
+type = "image"
+title = "Lifestyle wearing custom clothes"
+
+[[generated]]
+id = "8hRT912pX1PmW0_1UTAy6"
+uri = "file://artifacts/custom-florenza/src/assets/lifestyle2.png"
+type = "image"
+title = "Lifestyle wearing custom hoodie"
