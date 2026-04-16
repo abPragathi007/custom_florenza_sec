@@ -2,13 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Correct path (ROOT)
 COPY package*.json ./
-RUN npm install
 
-# Copy everything
+RUN npm install -g pnpm && pnpm install
+
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["pnpm", "start"]
