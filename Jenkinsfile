@@ -2,22 +2,25 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Install') {
+        stage('Clone Code') {
             steps {
-                sh 'npm install'
+                git 'https://github.com/abPragathi007/custom_florenza_sec.git'
             }
         }
 
-        stage('Build') {
+        stage('Build Docker Image') {
             steps {
-                sh 'npm run build'
+                sh 'docker build -t florenza-app .'
             }
         }
 
-        stage('Test') {
+        stage('Deploy') {
             steps {
-                sh 'npm test || echo "No tests"'
+                sh '''
+                docker stop florenza || true
+                docker rm florenza || true
+                docker run -d -p 80:3000 --name florenza florenza-app
+                '''
             }
         }
     }
