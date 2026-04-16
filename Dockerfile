@@ -2,10 +2,12 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY Florenza-Custom-Style-1/package*.json ./
+# Correct path (ROOT)
+COPY package*.json ./
 RUN npm install
 
-COPY Florenza-Custom-Style-1/ .
+# Copy everything
+COPY . .
 
 EXPOSE 3000
 
